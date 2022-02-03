@@ -26,7 +26,7 @@ describe('Turn', () => {
   });
 
   it('should store the current card', () => {
-    expect(turn.currentCard).to.deep.equal(card);
+    expect(turn.card).to.deep.equal(card);
   });
 
   it('should return the player\s guess', () => {
@@ -38,7 +38,7 @@ describe('Turn', () => {
   it('should return the card', () => {
     turn.returnCard(card);
 
-    expect(turn.currentCard).to.deep.equal(card);
+    expect(turn.card).to.deep.equal(card);
   });
 
   it('should evaluate the player\s guess', () => {
